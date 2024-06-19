@@ -140,6 +140,10 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="tsconfig.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\server.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
