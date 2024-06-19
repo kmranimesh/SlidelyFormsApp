@@ -57,4 +57,21 @@ Public Class CreateSubmissionForm
 
         MessageBox.Show("Submission created successfully!")
     End Sub
+
+    Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
+        Dim submission As New With {
+        .name = txtName.Text,
+        .email = txtEmail.Text,
+        .phone = txtPhoneNum.Text,
+        .github_link = txtGithubLink.Text,
+        .stopwatch_time = lblStopwatchTime.Text
+    }
+
+        Dim json As String = JsonConvert.SerializeObject(submission)
+        Using client As New WebClient()
+            client.Headers(HttpRequestHeader.ContentType) = "application/json"
+            client.UploadString("http://localhost:3000/submit", "POST", json)
+        End Using
+    End Sub
+
 End Class

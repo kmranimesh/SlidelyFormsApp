@@ -49,4 +49,39 @@ Public Class ViewSubmissionsForm
             UpdateForm()
         End If
     End Sub
+
+    Private currentIndex As Integer = 0
+    Private submissions As JArray
+
+    Private Sub ViewSubmissionsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Using client As New WebClient()
+            Dim json As String = client.DownloadString("http://localhost:3000/read")
+            submissions = JArray.Parse(json)
+            UpdateForm()
+        End Using
+    End Sub
+
+    Private Sub btnPrevious_Click(sender As Object, e As EventArgs) Handles btnPrevious.Click
+        If currentIndex > 0 Then
+            currentIndex -= 1
+            UpdateForm()
+        End If
+    End Sub
+
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+        If currentIndex < submissions.Count - 1 Then
+            currentIndex += 1
+            UpdateForm()
+        End If
+    End Sub
+
+    Private Sub UpdateForm()
+        Dim submission As JObject = submissions(currentIndex)
+        txtName.Text = submission("name").ToString()
+        txtEmail.Text = submission("email").ToString()
+        txtPhoneNum.Text = submission("phone").ToString()
+        txtGithubLink.Text = submission("github_link").ToString()
+        lblStopwatchTime.Text = submission("stopwatch_time").ToString()
+    End Sub
+
 End Class
