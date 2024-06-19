@@ -40,38 +40,42 @@ Partial Class CreateSubmissionForm
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Location = New System.Drawing.Point(120, 80)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Location = New System.Drawing.Point(240, 154)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(218, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(434, 31)
         Me.TextBox1.TabIndex = 0
         '
         'TextBox2
         '
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Location = New System.Drawing.Point(120, 170)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox2.Location = New System.Drawing.Point(240, 327)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(218, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(434, 31)
         Me.TextBox2.TabIndex = 1
         '
         'TextBox3
         '
+        Me.TextBox3.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Location = New System.Drawing.Point(120, 140)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox3.Location = New System.Drawing.Point(240, 269)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(218, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(434, 31)
         Me.TextBox3.TabIndex = 2
         '
         'TextBox4
         '
+        Me.TextBox4.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Location = New System.Drawing.Point(120, 110)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox4.Location = New System.Drawing.Point(240, 212)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(218, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(434, 31)
         Me.TextBox4.TabIndex = 3
         '
         'btnToggleStopwatch
@@ -82,10 +86,10 @@ Partial Class CreateSubmissionForm
         Me.btnToggleStopwatch.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnToggleStopwatch.FlatAppearance.BorderSize = 0
         Me.btnToggleStopwatch.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnToggleStopwatch.Location = New System.Drawing.Point(50, 200)
-        Me.btnToggleStopwatch.Margin = New System.Windows.Forms.Padding(2, 0, 0, 0)
+        Me.btnToggleStopwatch.Location = New System.Drawing.Point(100, 385)
+        Me.btnToggleStopwatch.Margin = New System.Windows.Forms.Padding(4, 0, 0, 0)
         Me.btnToggleStopwatch.Name = "btnToggleStopwatch"
-        Me.btnToggleStopwatch.Size = New System.Drawing.Size(196, 29)
+        Me.btnToggleStopwatch.Size = New System.Drawing.Size(392, 56)
         Me.btnToggleStopwatch.TabIndex = 4
         Me.btnToggleStopwatch.Text = "TOGGLE STOPWATCH (CTRL + T)"
         Me.btnToggleStopwatch.UseCompatibleTextRendering = True
@@ -95,10 +99,10 @@ Partial Class CreateSubmissionForm
         '
         Me.btnSubmit.BackColor = System.Drawing.Color.LightBlue
         Me.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.btnSubmit.Location = New System.Drawing.Point(63, 247)
-        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnSubmit.Location = New System.Drawing.Point(126, 475)
+        Me.btnSubmit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSubmit.Name = "btnSubmit"
-        Me.btnSubmit.Size = New System.Drawing.Size(275, 28)
+        Me.btnSubmit.Size = New System.Drawing.Size(550, 54)
         Me.btnSubmit.TabIndex = 6
         Me.btnSubmit.Text = "SUBMIT (CTRL + S)"
         Me.btnSubmit.UseVisualStyleBackColor = False
@@ -110,37 +114,40 @@ Partial Class CreateSubmissionForm
         'Label
         '
         Me.Label.AutoSize = True
-        Me.Label.Location = New System.Drawing.Point(50, 50)
-        Me.Label.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label.Location = New System.Drawing.Point(100, 96)
+        Me.Label.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label.Name = "Label"
-        Me.Label.Size = New System.Drawing.Size(248, 13)
+        Me.Label.Size = New System.Drawing.Size(510, 25)
         Me.Label.TabIndex = 9
         Me.Label.Text = "Animesh Kumar, Slidely Task 2 - Create Submission"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(70, 80)
+        Me.Label1.Location = New System.Drawing.Point(140, 154)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(35, 13)
+        Me.Label1.Size = New System.Drawing.Size(68, 25)
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "Name"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(70, 110)
+        Me.Label2.Location = New System.Drawing.Point(140, 212)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(32, 13)
+        Me.Label2.Size = New System.Drawing.Size(65, 25)
         Me.Label2.TabIndex = 11
         Me.Label2.Text = "Email"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(50, 140)
+        Me.Label3.Location = New System.Drawing.Point(100, 269)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(63, 13)
+        Me.Label3.Size = New System.Drawing.Size(124, 25)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Phone Num"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -148,10 +155,11 @@ Partial Class CreateSubmissionForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(50, 170)
+        Me.Label4.Location = New System.Drawing.Point(100, 327)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label4.Size = New System.Drawing.Size(64, 26)
+        Me.Label4.Size = New System.Drawing.Size(127, 50)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Github Link " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "For Task 2"
         '
@@ -162,18 +170,19 @@ Partial Class CreateSubmissionForm
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblStopwatchTime.BackColor = System.Drawing.SystemColors.ControlLight
         Me.lblStopwatchTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblStopwatchTime.Location = New System.Drawing.Point(269, 200)
+        Me.lblStopwatchTime.Location = New System.Drawing.Point(538, 385)
+        Me.lblStopwatchTime.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.lblStopwatchTime.Name = "lblStopwatchTime"
-        Me.lblStopwatchTime.Size = New System.Drawing.Size(69, 29)
+        Me.lblStopwatchTime.Size = New System.Drawing.Size(136, 54)
         Me.lblStopwatchTime.TabIndex = 14
         Me.lblStopwatchTime.Text = "00:00:00"
         Me.lblStopwatchTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'CreateSubmissionForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(603, 413)
+        Me.ClientSize = New System.Drawing.Size(1206, 794)
         Me.Controls.Add(Me.lblStopwatchTime)
         Me.Controls.Add(Me.Label)
         Me.Controls.Add(Me.Label4)
@@ -187,7 +196,7 @@ Partial Class CreateSubmissionForm
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.KeyPreview = True
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "CreateSubmissionForm"
         Me.Text = "CreateSubmissionForm"
         Me.ResumeLayout(False)
